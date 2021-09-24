@@ -22,7 +22,6 @@ nav {
 header{
     margin: 0 auto;
     max-width: 760px;
-    display: flex;
     padding: 1.5rem;
     color: purple;
     font-family: Tajawal, Candara, Arial, sans-serif;
