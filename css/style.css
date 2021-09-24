@@ -23,8 +23,6 @@ header{
     margin: 0 auto;
     max-width: 760px;
     display: flex;
-    align-items: right;
-    justify-content: left;
     padding: 1.5rem;
     color: purple;
     font-family: Tajawal, Candara, Arial, sans-serif;
