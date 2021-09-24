@@ -1,18 +1,27 @@
+#content {
+    max-width: 760px;
+    margin: 5% auto;
+}
 body {
     font-size: 16px;
+    font-family: Tajawal, Candara, Arial, sans-serif;
     line-height: 1.5;
     background-color: rgb(243, 243, 243)
 }
 
-header,
-nav,
-footer,
 main {
     margin: 0 auto;
     max-width: 760px;
 }
 
+nav {
+    margin: 0 auto;
+    max-width: 760px; 
+}
+
 header{
+    margin: 0 auto;
+    max-width: 760px;
     display: flex;
     align-items: right;
     justify-content: left;
@@ -21,11 +30,10 @@ header{
     font-family: Tajawal, Candara, Arial, sans-serif;
     background-color: #f2e9e4;
 }
-header img {
-    float: right;
-}
 
 footer {
+    margin: 0 auto;
+    max-width: 760px;
     width: 625px;
     padding: 10px 100px;
     border-radius: 10px;
@@ -46,11 +54,11 @@ img {
     object-fit: cover;
 }
 
-hr.solid {
-    border-top: 2px solid #bbb;
+.assignmentlink {
+    margin: 10px 75px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.assignmentlink,
 li {
     margin: 10px 75px;
     font-family: Georgia, 'Times New Roman', Times, serif;
