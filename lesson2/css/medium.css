@@ -1,0 +1,11 @@
+@media (min-width: 32.5em) {
+    header, footer, main {
+        margin: 0 auto;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+    footer {
+        line-height: 0.6em;
+    }
+}

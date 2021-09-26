@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;1,700&display=swap');
+
+main, header, footer {
+    max-width: 900px;
+}
+img {
+    border-radius: 10px;
+    box-shadow: 6px 6px 3px ivory;
+    width: 200px;
+    float: right;
+    margin: 1rem;
+    object-fit: cover;
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+    text-align: center;
+    height: auto;
+    width: fit-content;
+    object-fit: scale-down;
+}
+header, footer {
+    background-color: ivory;
+    color: darkolivegreen;
+    text-align: center;
+    padding: 0 1rem;
+}
+main p {
+    font-family: Tajawal, Candara, Arial, sans-serif;
+    text-align: center;
+}
+main section {
+    margin: 1.2rem;
+    padding: 0 1rem;
+    background-color: whitesmoke;
+    box-shadow: 6px 6px 3px rgb(153, 153, 153);
+}
+footer a {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+footer a:hover {
+    color: darkslategray;
+    text-decoration: underline;
+}
+a {
+    color: darkolivegreen;
+    text-decoration: none;
+}
+a:hover {
+    color: darkslategray;
+    text-decoration: underline;
+}
