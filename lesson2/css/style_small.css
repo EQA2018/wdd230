@@ -6,8 +6,7 @@ main, header, footer {
 img {
     border-radius: 10px;
     box-shadow: 6px 6px 3px ivory;
-    width: 200px;
-    float: right;
+    width: 80%;
     margin: 1rem;
     object-fit: cover;
 }
