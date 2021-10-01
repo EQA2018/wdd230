@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
 
-body {
+/*body {
 	font-size: 16px;
 	font-family: "Sansita", Ubuntu, sans-serif;
 }
 
 /* phone or baseline views **************************/
-header,
+/*header,
 footer {
 	background-color: #bed;
 	display: flex;
@@ -53,7 +53,7 @@ nav ul li a {
 }
 nav a:hover {
 /* 	background-color: #bbb;
-	color: #36454f; */
+	color: #36454f; 
 	--d: 75%;
 }
 .active {
@@ -77,37 +77,17 @@ main picture {
 
 footer {
 	height: 2rem;
-}
+}*/
 
 /* Tablet Views ******************************/
-@media only screen and (min-width: 37.5em) {
+/*@media only screen and (min-width: 37.5em) {
 	h1 { font-size: 1.5rem;}
 	
 	/* Horizontal Menu Examples */
-	/* Flex *********************/
+	/* Flex *********************
  		nav ul { display: flex; }
 		nav ul li { flex: 1 1 100%; } 
 	
-
-	/* Grid *********************/
-			/*nav ul { 
-				display: grid;
-				/*grid-template-columns: repeat(5, 1fr);*/
-			/*	grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-			} */
-
-	/* Inline-Block             */
-	/*
-			nav li {display: inline-block;}
-	*/
-
-	/* Float                    */
-	/*
-			nav li {float:left; margin-right:15px;}
-			main {clear:both;}
-	*/
-
-/*******************************************************/
 	
 	nav a {
 		font-size: 1rem;
@@ -126,18 +106,4 @@ footer {
 		height: auto;
 		border: 1px solid #bbb;
 	}
-}
-
-/* Desktop Views ****************************/
-@media only screen and (min-width: 60em) {
-	h1 { font-size: 2rem;}
-	nav a {
-		font-size: 1.1rem;
-	}
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	article:nth-child(3) {
-		grid-column: span 1;
-	}
-}
+}*/
