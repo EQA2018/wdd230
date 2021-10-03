@@ -3,8 +3,6 @@ body {
     font-size: 1.2rem;
 }
 header, footer {
-    background-color: beige;
-    color: black;
     padding: 0.5rem;
     text-align: center;
     font-family:  'Montserrat', sans-serif;
@@ -14,7 +12,7 @@ h1, h2, h3 {
     font-family: 'Times New Romans', serif;
 }
 nav {
-    background-color:beige;
+
     text-align: center;
 }
 nav ul {
@@ -28,13 +26,10 @@ nav ul li a {
     text-align: center;
     padding: .8rem;
     text-decoration: none;
-    color: black;
+
     font-size: 1.2rem;
 }
-nav a:hover {
-    background-color:beige;
-    color: black;
-}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -46,5 +41,5 @@ main {
     object-fit: scale-down;
     font-size: 1.2rem;
     line-height: 1rem;
-    color: black;
+
 }
