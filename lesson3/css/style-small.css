@@ -3,7 +3,7 @@ body {
     font-size: 1.2rem;
 }
 header, footer {
-    background-color: white;
+    background-color: beige;
     color: black;
     padding: 0.5rem;
     text-align: center;
@@ -14,7 +14,7 @@ h1, h2, h3 {
     font-family: 'Times New Romans', serif;
 }
 nav {
-    background-color: white;
+    background-color:beige;
     text-align: center;
 }
 nav ul {
@@ -28,12 +28,12 @@ nav ul li a {
     text-align: center;
     padding: .8rem;
     text-decoration: none;
-    color: beige;
+    color: black;
     font-size: 1.2rem;
 }
 nav a:hover {
-    background-color: blue;
-    color: white;
+    background-color:beige;
+    color: black;
 }
 main {
     display: grid;
@@ -46,5 +46,5 @@ main {
     object-fit: scale-down;
     font-size: 1.2rem;
     line-height: 1rem;
-    color: white;
+    color: black;
 }
