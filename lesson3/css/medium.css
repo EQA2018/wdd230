@@ -1,34 +1,12 @@
-/*@media (min-width: 32.5em) {
-    header, footer, main {
+@media (min-width: 36.5em) {
+    body {
         margin: 0 auto;
     }
-    main {
-        grid-template-columns: 1fr 1fr;
+    nav ul {
+        display: flex;
     }
-    footer {
-        line-height: 0.6em;
+    nav ul li {
+        flex: 1 1 100%;
     }
-    nav ul { 
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    } 
-    nav a {
-		font-size: 1rem;
-	}
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
-	article:nth-child(3) {
-		grid-column: span 2;
-	}
-	main picture {
-		display: block;
-	}
-	main picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
 }
     

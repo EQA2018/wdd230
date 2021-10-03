@@ -1,109 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap');
-
-/*body {
-	font-size: 16px;
-	font-family: "Sansita", Ubuntu, sans-serif;
+body {
+    font-family: 'Times New Romans', serif;;
+    font-size: 1.2rem;
 }
-
-/* phone or baseline views **************************/
-/*header,
-footer {
-	background-color: #bed;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	justify-content: center;
-	padding: 10px;
+header, footer {
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    text-align: center;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: bold;
 }
-
-header,
-nav,
-main,
-footer {
-	max-width: 767px;
-	margin: 0 auto;
+h1, h2, h3 {
+    font-family: 'Times New Romans', serif;
 }
-h1 {
-	font-size: 1.1rem;
-}
-h2 {
-	color: #536878;
-}
-
 nav {
-	background-color: #36454f;
-	text-align: center;
-	box-shadow: 0 2px 15px gray;
+    background-color: white;
+    text-align: center;
 }
 nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 nav ul li a {
-	display: block;
-	color: #fff;
-	text-align: center;
-	padding: 0.75rem;
-	text-decoration: none;
-	font-size: 0.95rem;
-	background: linear-gradient(90deg, transparent, yellow, transparent) top / var(--d, 0) 10px no-repeat;
-  transition: 0.5s;
+    display: block;
+    text-align: center;
+    padding: .8rem;
+    text-decoration: none;
+    color: beige;
+    font-size: 1.2rem;
 }
 nav a:hover {
-/* 	background-color: #bbb;
-	color: #36454f; 
-	--d: 75%;
-}
-.active {
-	color: yellow;
+    background-color: blue;
+    color: white;
 }
 main {
-	display: grid;
-	grid-template-columns: 1fr;
-	font-size: 0.8rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    height: auto;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.8rem;
+    object-fit: scale-down;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    color: white;
 }
-main article {
-	margin: 0.5rem;
-	border: 1px solid #bbb;
-	padding: 0 1rem;
-	background-color: #eee;
-}
-main picture {
-	display: none;
-	margin: 0.5rem;
-}
-
-footer {
-	height: 2rem;
-}*/
-
-/* Tablet Views ******************************/
-/*@media only screen and (min-width: 37.5em) {
-	h1 { font-size: 1.5rem;}
-	
-	/* Horizontal Menu Examples */
-	/* Flex *********************
- 		nav ul { display: flex; }
-		nav ul li { flex: 1 1 100%; } 
-	
-	
-	nav a {
-		font-size: 1rem;
-	}
-	main {
-		grid-template-columns: 1fr 1fr;
-	}
-	article:nth-child(3) {
-		grid-column: span 2;
-	}
-	main picture {
-		display: block;
-	}
-	main picture img {
-		width: 100%;
-		height: auto;
-		border: 1px solid #bbb;
-	}
-}*/
