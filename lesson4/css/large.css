@@ -7,11 +7,8 @@
     }
     nav ul li {
         flex: 1 1 100%;
-    } 
-    main section img{
-        width: 80%;
-        height: auto;
-        box-shadow: 0 0 6px gray;
-        float: left;
+    }
+    header img {
+        width: 20%;
     }
 }
