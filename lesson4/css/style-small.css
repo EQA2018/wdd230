@@ -16,7 +16,6 @@ header img {
     box-shadow: 0 0 6px black;
 }
 .header1 {
-    /*grid-column-start: 2;*/
     display: flex;
     flex-direction: column;
 }
@@ -24,8 +23,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-   /* display: grid;
-    grid-template-columns: 20% 80%;*/
 }
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
@@ -53,27 +50,40 @@ nav {
     background-color: #99b6d6;
     text-align: center;
 }
+/*.navigation {
+    list-style: none;
+    padding: 0;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}*/
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 nav ul li a {
     display: block;
     text-align: center;
     padding: .8rem;
     text-decoration: none;
-    color: white;
+    color:black /*switch to white*/;
     font-size: 1.2rem;
 }
 nav a:hover {
-    background-color: white;
-    color: #99b6d6;
+    background-color: whitesmoke;
+    color: #73a2d4;
+}
+nav button {
+    display: none;
+    margin: 0 auto;
+    color: black;
 }
 main {
-    /*display: grid;
-    grid-template-columns: 1fr;*/
+
     text-align: left;
     height: auto;
     width: fit-content;
@@ -118,4 +128,12 @@ p {
     text-align: center;
     font-size: 1.2rem;
     line-height: 1.2rem;
+}
+.contentbox {
+    background-color: whitesmoke;
+    padding: 25px;
+    margin: 10px auto;
+    border-left: 5px solid gray;
+    text-align: center;
+    color: black;
 }

@@ -3,8 +3,8 @@
  <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width,initial-scale=1.0">
- <title>Meaningful Title</title>
- <meta name="description" content=""> 
+ <title>RMC - Preston</title>
+ <meta name="Quinn Smith" content="author"> 
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
@@ -12,6 +12,7 @@
  <link rel="stylesheet" href="css/style-small.css">
  <link rel="stylesheet" href="css/medium.css">
  <link rel="stylesheet" href="css/large.css">
+ <script defer src="js/footerdates.js"></script>
 
  </head>
  <body>
@@ -26,9 +27,10 @@
         </header>
        
             <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Preston</a></li>
+                <ul class="navigation">
+                    <li><a href="#" onclick="toggleMenu()"> Menu</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="preston-4.html">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
                     <li><a href="#">Storm Center</a></li>
@@ -38,16 +40,20 @@
  <main>
      <section>
          <h2>Preston</h2>
-         <p> placement</p>
+         <section class="maincontent">
+         <div class="contentbox">Hero w/weather Summary</div>
+         <div class="contentbox">5 day forecast</div>
+         <div class="contentbox">Article</div>
+         <div class="contentbox">Contact Information</div>
+        </section>
      </section>
  </main>
  <footer>
     <p class="footer1">
         &copy; <span id="copyrightyear"></span> | Quinn Smith | Minnesota | <a href=" https://www.byui.edu ">BYUI Online Learning</a> <br><br>
-        Last Update: <span id="lastUpdate"></span>
         </p>
+        <p class = "footer1"><span id ="date"></span></p>
 </footer>
 </div>
-<script src="js/lastupdate.js"></script>
  </body>
 </html>
