@@ -1,18 +1,23 @@
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 40rem) {
 
     body {
         margin: 0 auto;
     }
-
-    nav button {
-        display: none;
-    }
-
-    nav ul {
+    .navigation {
         display: flex;
     }
-
-    nav ul li {
-        flex: 1 1 100%;
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    
+    header img {
+        width: 10rem;
     }
 }

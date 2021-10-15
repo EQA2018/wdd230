@@ -11,7 +11,7 @@ header, footer {
     font-weight: bold;
 }
 header img {
-    width: 50%;
+    width: 10rem;
     height: auto;
     box-shadow: 0 0 6px black;
 }
@@ -23,6 +23,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
 }
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
@@ -33,54 +37,18 @@ h1 {
 h2 {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #f7b05b;
+    color: #cc7b18;
     text-align: left;
 }
 
 h3 {
-    color: #f7b05b;
+    color: #cc7b18;
     text-align: left;
 }
 .author-name {
     color: white;
     font-weight: bold;
     text-align: center;
-}
-nav {
-    background-color: #99b6d6;
-    text-align: center;
-}
-/*.navigation {
-    list-style: none;
-    padding: 0;
-}
-.navigation li:first-child {
-    display: block;
-}
-.navigation li {
-    display: none;
-}*/
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-nav ul li a {
-    display: block;
-    text-align: center;
-    padding: .8rem;
-    text-decoration: none;
-    color:black /*switch to white*/;
-    font-size: 1.2rem;
-}
-nav a:hover {
-    background-color: whitesmoke;
-    color: #73a2d4;
-}
-nav button {
-    display: none;
-    margin: 0 auto;
-    color: black;
 }
 main {
 
@@ -102,12 +70,6 @@ main section img{
 }
 main section {
     background-color: white;
-}
-main section ul li {
-    text-align: left;
-    color: #886f68;
-    padding: .6rem;
-    font-weight: normal;
 }
 a {
     text-decoration: none;
@@ -137,3 +99,66 @@ p {
     text-align: center;
     color: black;
 }
+
+
+nav {
+    background-color: #99b6d6;
+    text-align: center;
+}
+nav a:hover {
+    background-color: whitesmoke;
+    color: #73a2d4;
+}
+.navigation a {
+    display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+}
+/*.navigation .active a {
+    background-color: white;
+    color: #73a2d4;
+}*/
+.navigation .menu a {
+    text-align: center;
+}
+.navigation {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+.navigation a:hover {
+    background-color: whitesmoke;
+    color: #73a2d4;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+    margin: auto;
+}
+.responsive li {
+    display: block;
+}
+/*nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    display: block;
+    text-align: center;
+    padding: .8rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}*/
+/*main section ul li {
+    text-align: left;
+    color: #886f68;
+    padding: .6rem;
+    font-weight: normal;
+}*/

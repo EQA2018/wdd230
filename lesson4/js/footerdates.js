@@ -1,21 +1,13 @@
-/*const hambutton = document.querySelector(".hamburger");
-const mainnav = document.querySelector(".navigation");
+const menubutton = document.querySelector('.menu');
+const mainnav = document.querySelector('.navigation');
+/*document.querySelector('.menu')
+document.querySelector('mainnav')
+ocument.querySelector('.navigation')*/
+menubutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
-hambutton.addEventListener("click", () => {mainnav.classList.toggle("responsive")}, false);
-
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
-
-document.querySelector(".copyrightyear").textContent = new Date().getFullYear();
-
-const date = new Date(Date.now());
-
-const options = {
-    weekday: 'long',
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric'
+window.onresize = () => {
+    if (window.innerWidth > 675) mainnav.classList.remove('responsive')
 };
-document.querySelector("#date").textContent = date.toLocaleDateString('en-UK', options);*/
 
 let d = new Date();
 document.getElementById("copyrightyear").textContent = d.getFullYear();
@@ -28,7 +20,3 @@ const options = {
 }
 
 document.getElementById("date").textContent = d.toLocaleDateString('en-UK', options);
-
-function toggleMenu() {
-    document.getElementById("navigation").classList.toggle("hide");
-}
