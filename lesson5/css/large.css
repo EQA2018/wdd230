@@ -1,0 +1,44 @@
+@media (min-width: 65em) {
+    body {
+        margin: 0 auto;
+    }
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 1 auto;
+    }
+    header img {
+        width: 10rem;
+    }
+    .article img {
+        width: 250px;
+    }
+    .pancake p {
+        padding: 0.75rem;
+        font-size: 1.25rem;
+    }
+    picture img {
+        box-shadow: 0 0 1rem 0.55rem black;
+    }
+    .weather {
+        padding: 0.75rem;
+        font-size: 1.25rem;
+        top: 1rem;
+        left: 1rem;
+    }
+    .pet , .forecast {
+        margin: 2rem 0 0 0;
+    }
+    .flex img {
+        width: 80px;
+        padding-top: 1rem;
+    }
+    .col-head, .condition {
+        padding: 1rem 0;
+        font-size: 1.25rem;
+    }
+    header img {
+        width: 200px;
+    }
+}
