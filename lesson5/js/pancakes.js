@@ -1,4 +1,3 @@
-const d = new Date();
 const day = d.getDate();
 
 if (day == 5) {

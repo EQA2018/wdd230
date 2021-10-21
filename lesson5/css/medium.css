@@ -16,6 +16,12 @@
     .navigation li:first-child {
         display: none;
     }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     
     header img {
         width: 10rem;

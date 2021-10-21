@@ -1,7 +1,8 @@
 body {
     font-family: 'Times New Romans', serif;;
     font-size: 1.2rem;
-    max-width: 1000px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 header, footer {
     background-color: #886f68;
@@ -16,18 +17,19 @@ header img {
     height: auto;
     box-shadow: 0 0 6px black;
 }
-.header1 {
+/*.header1 {
     display: flex;
     flex-direction: column;
-}
+}*/
 header {
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     padding-left: 2rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
     padding-right: 2rem;
+    font-size: medium;
 }
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
@@ -182,11 +184,11 @@ nav a:hover {
     text-align: left;
 }
 /*footer contact stuff 3*/
-header {
+/*header {
     padding: 0.5rem;
     display: flex;
     justify-content: space-around;
-}
+}*/
 .pancake {
     display: none;
     margin: 0;
@@ -200,8 +202,7 @@ header {
     position: relative;
 }
 picture img {
-    width: 1000px;
-    height: 400px;
+    width: 100%;
     margin: 0;
     box-shadow: 0 0 0.5rem black;
     border-radius: 7px;
@@ -209,6 +210,7 @@ picture img {
 .forecast {
     margin: 1rem 0 0.25rem 0;
     text-align: center;
+    width: 100%;
 }
 .pet {
     margin: 1rem 0 0 0;
@@ -267,7 +269,7 @@ picture img {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
-.flix img {
+.flex img {
     width: 40px;
     height: auto;
     padding-top: 0.25rem;
