@@ -227,10 +227,10 @@ picture img {
     gap: 0 0.25rem;
     width: auto;
 }
-.left {
+.left1 {
     justify-self: right;
 }
-.right {
+.right1 {
     justify-self: left;
 }
 .weather h3 {
