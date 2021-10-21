@@ -63,16 +63,14 @@ main {
     object-fit: scale-down;
     font-size: 1.2rem;
     line-height: 1rem;
-    color: white;
+    color: #c6d8af;
+    background-color: #e9f5db;
 }
 main section img{
     width: 25%;
     height: auto;
     box-shadow: 0 0 6px gray;
     float: left;
-}
-main section {
-    background-color: white;
 }
 a {
     text-decoration: none;
@@ -129,6 +127,7 @@ nav a:hover {
     padding: 0;
     overflow: hidden;
     text-align: center;
+    margin: 0;
 }
 .navigation a:hover {
     background-color: whitesmoke;
@@ -171,7 +170,7 @@ nav a:hover {
     border: 1px solid black;
     padding: 0.4em;
     box-shadow: 0 0 5px black;
-    background-color: white;
+    background-color: whitesmoke;
     margin: auto;
     margin-top: 1em;
 }
@@ -193,7 +192,7 @@ nav a:hover {
     display: none;
     margin: 0;
     padding: 0.25rem 0;
-    background-color: white;
+    background-color: #d8e2dc;
     text-align: center;
     font-size: 0.8rem;
     color: #886f68;
