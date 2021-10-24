@@ -1,0 +1,282 @@
+body {
+    font-family: 'Times New Romans', serif;;
+    font-size: 1.2rem;
+    max-width: 80%;
+    margin: 0 auto;
+    background-color: white; /*change color*/
+}
+header, footer {
+    background-color: #886f68;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: bold;
+}
+header img {
+    width: 10rem;
+    height: auto;
+    box-shadow: 0 0 6px black;
+}
+header {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    font-size: medium;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+h1 {
+    font-size: 3.2rem;
+}
+h2 {
+    font-weight: bold;
+    color: #cc7b18;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+h3 {
+    color: #cc7b18;
+    text-align: left;
+}
+.author-name {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+main {
+
+    text-align: left;
+    height: auto;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0.8rem;
+    object-fit: scale-down;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    color: #c6d8af;
+    background-color: #e9f5db;
+}
+main section img{
+    width: 25%;
+    height: auto;
+    box-shadow: 0 0 6px gray;
+    float: left;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+p {
+    color: #886f68;
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+.motto {
+    color: white;
+    text-align: center;
+}
+.footer1 {
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+.contentbox {
+    background-color: whitesmoke;
+    padding: 25px;
+    margin: 10px auto;
+    border-left: 5px solid gray;
+    text-align: center;
+    color: black;
+}
+nav {
+    background-color: #99b6d6;
+    text-align: center;
+}
+nav a:hover {
+    background-color: whitesmoke;
+    color: #73a2d4;
+}
+.navigation a {
+    display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+}
+.navigation .active a {
+    background-color: white;
+    color: #73a2d4;
+}
+.navigation .menu a {
+    text-align: center;
+}
+.navigation {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    margin: 0;
+}
+.navigation a:hover {
+    background-color: whitesmoke;
+    color: #73a2d4;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+    margin: auto;
+}
+.responsive li {
+    display: block;
+}
+/*footer contact stuff 1*/
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.social-media img {
+    margin: 0.5rem;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+.contact-info {
+    text-align: left;
+    padding: 0 1rem;
+}
+.contact-info h3 {
+    text-align: left;
+}
+#preston-map {
+    border-radius: 25px;
+    width: 250px;
+}
+/*footer contact stuff 2*/
+.article {
+    border: 1px solid black;
+    padding: 0.4em;
+    box-shadow: 0 0 5px black;
+    background-color: whitesmoke;
+    margin: auto;
+    margin-top: 1em;
+}
+/*.article img {
+    width: 250px;
+    box-shadow: 0 0 10px black;
+    border-radius: 0px 30px 0px 30px;
+}*/
+.article p, .article h3 {
+    text-align: left;
+}
+/*footer contact stuff 3*/
+.pancake {
+    display: none;
+    margin: 0;
+    padding: 0.25rem 0;
+    background-color: #d8e2dc;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #886f68;
+}
+.herocontainer {
+    position: relative;
+}
+picture img {
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 0 0.5rem black;
+    border-radius: 7px;
+}
+.forecast {
+    margin: 1rem 0 0.25rem 0;
+    text-align: center;
+    width: 100%;
+}
+.pet {
+    margin: 1rem 0 0 0;
+}
+.weather {
+    position: absolute;
+    top: 0.25rem;
+    left: 0.25rem;
+    margin: 0;
+    background-color: whitesmoke;
+    padding: 0.5rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 0.25rem;
+    width: auto;
+}
+.left1 {
+    justify-self: right;
+}
+.right1 {
+    justify-self: left;
+}
+.weather h3 {
+    grid-column: 1 / span 2;
+    margin: 0;
+}
+.weather p {
+    margin: 0;
+    padding: 0.1rem 0;
+}
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0.5rem 0;
+}
+.flex-col:nth-child(1) {
+    border-left: 1px solid black;
+}
+.flex-col {
+    flex: 1 1 auto;
+    background-color: whitesmoke;
+    text-align: center;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.col-head, .condition {
+    display: block;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 0.25rem 0;
+    font-size: 0.8rem;
+    color: #886f68;
+}
+.col-head {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.flex img {
+    width: 40px;
+    height: auto;
+    padding-top: 0.25rem;
+}
+/*week 6 changes*/
+.heroimg img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    box-shadow: 0 0 0.5rem black;
+    border-radius: 7px;
+}
+.petadoption img {
+    width: 40%;
+    height: auto;
+    margin: 1rem 1rem 1rem 1rem;
+    box-shadow: 0 0 10px black;
+    border-radius: 0px 30px 0px 30px;
+}
