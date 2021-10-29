@@ -1,5 +1,5 @@
-const t = parseFloat(document.querySelector('.t').textContent);
-const s = parseFloat(document.querySelector('.s').textContent);
+const t = parseFloat(document.querySelector('#t').textContent);
+const s = parseFloat(document.querySelector('#s').textContent);
 
 let f;
 if (t <= 50 && s >= 3) {
@@ -8,4 +8,4 @@ if (t <= 50 && s >= 3) {
 else {
     f = "n/a";
 }
-document.querySelector('.f').textContent = f;
+document.querySelector('#f').textContent = f;
