@@ -6,7 +6,7 @@ body {
     background-color: white; /*change color*/
 }
 header, footer {
-    background-color: #886f68;
+    background-color: #5f4d48;
     color: white;
     padding: 0.5rem;
     text-align: center;
@@ -74,7 +74,7 @@ a {
     color: white;
 }
 p {
-    color: #886f68;
+    color: black;
     text-align: left;
     font-size: 1.2rem;
     line-height: 1.2rem;
@@ -98,12 +98,13 @@ p {
     color: black;
 }
 nav {
-    background-color: #99b6d6;
+    background-color: #05476e;
     text-align: center;
+    font-size: 1.3rem;
 }
 nav a:hover {
     background-color: whitesmoke;
-    color: #73a2d4;
+    color: #05476e;
 }
 .navigation a {
     display: block;
@@ -113,8 +114,8 @@ nav a:hover {
 	color: white;
 }
 .navigation .active a {
-    background-color: white;
-    color: #73a2d4;
+    background-color: whitesmoke;
+    color: #05476e;
 }
 .navigation .menu a {
     text-align: center;
@@ -128,7 +129,7 @@ nav a:hover {
 }
 .navigation a:hover {
     background-color: whitesmoke;
-    color: #73a2d4;
+    color: #05476e;
 }
 .navigation li:first-child {
     display: block;
@@ -187,7 +188,7 @@ nav a:hover {
     background-color: #d8e2dc;
     text-align: center;
     font-size: 0.8rem;
-    color: #886f68;
+    color: #5f4d48;
 }
 .herocontainer {
     position: relative;
@@ -254,7 +255,7 @@ picture img {
     text-align: center;
     padding: 0.25rem 0;
     font-size: 0.8rem;
-    color: #886f68;
+    color: black;
 }
 .col-head {
     border-top: 1px solid black;
