@@ -38,11 +38,6 @@
     .article {
         margin: 2em;
     }
-    /*.article img {
-        float: right;
-        margin: 1em;
-        width: 250px;
-    }*/
     .pancake {
         font-size: 1rem;
     }
@@ -62,7 +57,7 @@
         padding-top: 0.5rem;
     }
     .col-head, .condition {
-        padding: 0,5rem 0;
+        padding: 0.5rem 0;
         font-size: 0.8rem;
     }
     .petadoption img {
@@ -71,6 +66,9 @@
         height: auto;
         margin: 2rem 2rem 2rem 2rem;  
         border-radius: 0px 30px 0px 30px;
+    }
+    .gallery-grid {
+        grid-template-columns: 1fr 1fr;
     }
 
 }

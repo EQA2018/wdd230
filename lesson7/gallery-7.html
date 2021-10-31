@@ -3,19 +3,19 @@
  <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width,initial-scale=1.0">
- <title>Rocky Mountain Weather - Preston</title>
- <meta name="description" content="preston-weather-page"> 
+ <title>Rocky Mountain Weather - Gallery</title>
+ <meta name="description" content="gallery-page"> 
  <link rel ="shortcut icon" href ="favicon.ico">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="#">
- <link rel="stylesheet" href="#">
- <link rel="stylesheet" href="#">
- <link rel="stylesheet" href="#">
- <script defer src="#"></script>
- <script defer src="#"></script>
- <script defer src="#"></script>
+ <link rel="stylesheet" href="../lesson6/css/normalize.css">
+ <link rel="stylesheet" href="../lesson6/css/small.css">
+ <link rel="stylesheet" href="../lesson6/css/medium.css">
+ <link rel="stylesheet" href="../lesson6/css/large.css">
+ <script defer src="../lesson6/js/banner.js"></script>
+ <script defer src="../lesson6/js/pancakes.js"></script>
+ <script defer src="js/lazyload.js"></script>
 
  </head>
  <body>
@@ -28,7 +28,7 @@
             <img src="images/weather-logo.JPG" alt="Logo">
             <section class="header1">
                 <h1>Rocky Mountain Country Weather and Events</h1>
-                    <div class="motto"> Motto will go here.
+                    <div class="motto"> Whether it's weather or events its here!
                     </div>
             </section>
         </header>
@@ -37,44 +37,93 @@
                 <ul class="navigation">
                     <li class="menu"><a>Menu</a></li>
                     <li><a href="#">Home</a></li>
-                    <li class="active"><a href="preston-4.html">Preston</a></li>
+                    <li class="active"><a href="preston-6.html">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
                     <li><a href="#">Storm Center</a></li>
-                    <li><a href="#">Gallery</a></li>
+                    <li><a href="gallery-7.html">Gallery</a></li>
                 </ul>
             </nav>
  <main>
      
          <h2>Weather Gallery</h2>
-         <picture>
-            <img src="#" data-src="#" alt="#">
-        </picture>
-        <picture>
-            <img src="#" data-src="#" alt="#">
-        </picture>
-        <picture>
-            <img src="#" data-src="#" alt="#">
-        </picture>
-        <picture>
-            <img src="#" data-src="#" alt="#">
-        </picture>
-        <picture>
-            <img src="#" data-src="#" alt="#">
-        </picture>
-        <picture>
-            <img src="#" data-src="#" alt="#">
-        </picture>
-        <picture>
-            <img src="#" data-src="#" alt="#">
-        </picture>
-        <picture>
-            <img src="#" data-src="#" alt="#">
-        </picture>
-        <picture>
-            <img src="#" data-src="#" alt="#">
-        </picture>
 
+         <div class="gallery-grid">
+             <figure>
+                 <img src="images/background-color-7.jpg" 
+                 data-src="images/blue-lightning-storm.jpg" 
+                 alt="Blue Lightning Storm">
+                 <figcaption>
+                     Lightning storm over a city.
+                 </figcaption>
+             </figure>
+                
+             <figure>
+                 <img src="images/background-color-7.jpg" 
+                 data-src="images/foggy-forest.jpg" 
+                 alt="Foggy Forest">
+                 <figcaption>
+                     Foggy morning in a forest.
+                 </figcaption>
+             </figure>
+             <figure>
+                 <img src="images/background-color-7.jpg" 
+                 data-src="images/gray-storm-start.jpg" 
+                 alt="Storm Starting with Full Gray Clouds">
+                 <figcaption>
+                     Storm rolling in over a field.
+                 </figcaption>
+             </figure>
+             <figure>
+                 <img src="images/background-color-7.jpg" 
+                 data-src="images/lightning-over-ocean.jpg" 
+                 alt="Lightning over the Ocean">
+                 <figcaption>
+                     Lightning storm over the ocean near an island.
+                 </figcaption>
+             </figure>
+             <figure>
+                 <img src="images/background-color-7.jpg" 
+                 data-src="images/rain-in-city.jpg" 
+                 alt="Raining in a City">
+                 <figcaption>
+                     Rain storm in a city.
+                 </figcaption>
+             </figure>
+             <figure>
+                 <img src="images/background-color-7.jpg" 
+                 data-src="images/rain-on-lake.jpg" 
+                 alt="Raining on a Lake">
+                 <figcaption>
+                     Rain fall over a lake.
+                 </figcaption>
+             </figure>
+             <figure>
+                 <img src="images/background-color-7.jpg" 
+                 data-src="images/rainbow-in-ocean.jpg" 
+                 alt="Rainbow into the Ocean">
+                 <figcaption>
+                     Rainbow off the ocean shore.
+                 </figcaption>
+             </figure>
+             <figure>
+                 <img src="images/background-color-7.jpg" 
+                 data-src="images/snowymountain.jpg" 
+                 alt="Snow Covered Mountains">
+                 <figcaption>
+                     Mountains covered in snow.
+                 </figcaption>
+             </figure>
+             <figure>
+                 <img src="images/background-color-7.jpg" 
+                 data-src="images/start-of-tornado.jpg" 
+                 alt="Start of a Tornado">
+                 <figcaption>
+                     Starting of a tornado over a field.
+                 </figcaption>
+             </figure>
+                
+        </div>
  </main>
  <footer>
 <section class ="contact">
@@ -96,9 +145,12 @@
 
 </section>
     <p class="footer1">
+        <span id="gallery-visits"></span><br>
         &copy; <span id="copyrightyear"></span> | Quinn Smith | Minnesota | <a href=" https://www.byui.edu ">BYUI Online Learning</a> <br><br>
         </p>
-        <p class = "footer1"><span id ="date"></span></p>
+        <p class = "footer1"><span id ="date"></span></p><br>
+        <p><span id="gallery-visits"></span></p>
 </footer>
+<script src="js/lazyload.js"></script>
  </body>
 </html>

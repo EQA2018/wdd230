@@ -20,3 +20,17 @@ const options = {
 }
 
 document.getElementById("date").textContent = d.toLocaleDateString('en-UK', options);
+
+const today = d.getDate();
+
+const lastVisit = localStorage.getItem('lastVisit') || today;
+const millisecondsToDay = 86400000;
+
+if (lastVisit == today) {
+    document.querySelector('#gallery-visits').textContent = 'Last Visit: Today is your first visit!!';
+}
+else {
+    displayDate = (lastVisit - today / millisecondsToDay).toFixed(0);
+    document.querySelector('#gallery-visits').textContent = 'Last Visit: ${displayDate}';
+}
+localStorage.setItem('lastVisit', today);
