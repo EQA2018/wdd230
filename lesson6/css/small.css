@@ -172,11 +172,6 @@ nav a:hover {
     margin: auto;
     margin-top: 1em;
 }
-/*.article img {
-    width: 250px;
-    box-shadow: 0 0 10px black;
-    border-radius: 0px 30px 0px 30px;
-}*/
 .article p, .article h3 {
     text-align: left;
 }
@@ -291,7 +286,6 @@ picture img {
     justify-self: center;
     padding: 0;
     margin: 0;
-    box-shadow: 0 0 0.5rem black;
 }
 .gallery-grid img {
     max-width: 100%;
