@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <title>Rocky Mountain Weather - Storm Center</title>
+ <meta name="description" content="storm-center"> 
+ <link rel ="shortcut icon" href ="../lesson6/favicon.ico">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="../lesson6/css/normalize.css">
+ <link rel="stylesheet" href="../lesson6/css/small.css">
+ <link rel="stylesheet" href="../lesson6/css/medium.css">
+ <link rel="stylesheet" href="../lesson6/css/large.css">
+ <script defer src="../lesson6/js/banner.js"></script>
+
+ <script defer src="js/lazyload.js"></script>
+
+ </head>
+ <body>
+
+        <header>
+            <img src="images/weather-logo.JPG" alt="Logo">
+            <section class="header1">
+                <h1>Rocky Mountain Country Weather and Events</h1>
+                    <div class="motto"> Whether it's weather or events its here!
+                    </div>
+            </section>
+        </header>
+       
+            <nav>
+                <ul class="navigation">
+                    <li class="menu"><a>Menu</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li class="active"><a href="preston-6.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </nav>
+ <main>
+         <h2>Storm Center</h2>
+         <form action="thanks.html" method="get" class="form-grid">
+             <div id="user-info">
+                 <h3>Contact Information</h3>
+                 <fieldset>
+                     <label for="full-name">
+                         <input type="text" name="full-name" id="full-name" required pattern="[A-Za-z]{5,}" placeholder="Full Name">
+                     </label>
+                 </fieldset>
+                 <fieldset>
+                     <label for="phone">
+                         <input type="tel" name="phone" id="phone" required placeholder="Phone Number">
+                     </label>
+                 </fieldset>
+                 <fieldset>
+                     <label for="email">
+                         <input type="email" name="email" id="email" placeholder="janedoe@email.com">
+                     </label>
+                 </fieldset>
+                 <fieldset>
+                     <label for="zip">
+                         <input type="number" name="zip" id="zip" required placeholder="Zip Code">
+                     </label>
+                 </fieldset>
+                 <fieldset>
+                     <legend>Are you in danger?</legend>
+                     <div class="radio-selection">
+                         <label for="user-danger-level-yes">
+                             <input type="radio" id="user-danger-level-yes" name="danger-level" value="Yes">Yes
+                         </label>
+                     </div>
+                     <div class="radio-selection">
+                         <label for="user-danger-level-maybe">
+                             <input type="radio" id="user-danger-level-maybe" name="danger-level" value="Maybe">Maybe
+                         </label>
+                     </div>
+                     <div class="radio-selection">
+                         <label for="user-danger-level-no">
+                             <input type="radio" id="user-danger-level-no" name="danger-level" value="No" checked>No
+                         </label>
+                     </div>
+                 </fieldset>
+             </div>
+             <div id="storm-info">
+                 <h3>Storm Information</h3>
+                 <fieldset>
+                     <label for="storm-date">Storm Date
+                         <input type="date" name="storm-date" id="storm-date">
+                     </label>
+                 </fieldset>
+                 <fieldset>
+                     <label for="region-list">
+                         <select id="region-list" name="storm-region" onchange="selectResponse()">
+                            <option value="" disabled selected>Select Storm Region</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                     </label>
+                 </fieldset>
+                 <fieldset>
+                     <label for="storm-type">
+                         <input list="storm-list" name="storm-type" id="storm-type" placeholder="Select Storm Type">
+                     </label>
+                     <datalist id="storm-list">
+                         <option value="Flash Flood"></option>
+                         <option value="Hail"></option>
+                         <option value="Hurricane"></option>
+                         <option value="Thunderstorm"></option>
+                         <option value="Tornado"></option>
+                     </datalist>
+                 </fieldset>
+                 <fieldset>
+                     <label class="flexly" for="storm-severity">Storm Severity: <span id="value">4</span> &#160;&#160; 
+                        <input type="range" name="storm-severity" id="storm-severity" value="4" min="1" max="10" step="1" list="ranges" oninput="toggleRating(this.value)" onchange="toggleRating(this.value)">
+                     </label>
+                     <datalist id="ranges">
+                         <option value="1"></option>
+                         <option value="2"></option>
+                         <option value="3"></option>
+                         <option value="4"></option>
+                         <option value="5"></option>
+                         <option value="6"></option>
+                         <option value="7"></option>
+                         <option value="8"></option>
+                         <option value="9"></option>
+                         <option value="10"></option>
+                     </datalist>
+                 </fieldset>
+             </div>
+             <div id="additional-info">
+                 <h3>Additional Information</h3>
+                 <fieldset id="full-area">
+                     <label for="comments">Comments
+                         <textarea name="comments" id="comments" rows="8"></textarea>
+                     </label>
+                 </fieldset>
+                 <div id="button" tabindex="0">
+                     <input type="submit" name="submit" id="submit" value="Report Storm">
+                 </div>
+             </div>
+         </form>
+ </main>
+ <footer>
+<section class ="contact">
+    <div class ="info-grid">
+         <a href ="https://www.google.com/maps/place/Preston,+ID+83263/@42.1037738,-111.8938662,12.03z/data=!4m5!3m4!1s0x8754f78c7cda6c31:0xf1b3b4fc465a4a3f!8m2!3d42.0963133!4d-111.8766173" target ="_blank"><img src ="images/preston-idaho.JPG" alt ="Map of Preston Idaho" id="preston-map"></a>
+         <div class ="contact-info">
+             <h3 class ="footer1">Contact Information</h3>
+             <p class ="footer1">1234 N 5th W Preston, ID 83263</p>
+             <p class ="footer1">(123) 456-7890</p>
+             <p class ="footer1">rmpweatherandevents@gmail.com</p>
+             <div class ="social-media">
+                 <a href ="https://www.indeed.com/"><img src ="images/indeed-logo.JPG" alt ="Indeed Icon"></a>
+                 <a href ="https://www.facebook.com/"><img src ="images/facebook-logo.png" alt ="Facebook Icon"></a>
+                 <a href ="https://www.instagram.com/"><img src ="images/instagram-logo.jpg" alt ="Instagram Icon"></a>
+             </div>
+
+         </div>
+    </div>
+
+</section>
+    <p class="footer1">
+        <span id="gallery-visits"></span><br>
+        &copy; <span id="copyrightyear"></span> | Quinn Smith | Minnesota | <a href=" https://www.byui.edu ">BYUI Online Learning</a> <br><br>
+        </p>
+        <p class = "footer1"><span id ="date"></span></p><br>
+</footer>
+<script src="js/lazyload.js"></script>
+ </body>
+</html>

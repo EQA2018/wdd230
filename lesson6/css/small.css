@@ -54,7 +54,7 @@ main {
 
     text-align: left;
     height: auto;
-    width: fit-content;
+    /*width: fit-content;*/
     margin: 0 auto;
     padding: 0.8rem;
     object-fit: scale-down;
@@ -300,4 +300,59 @@ picture img {
 }
 .gallery-grid figure img[data-src] {
     filter: blur(0.2em);
+}
+.form-grid {
+    background-color: whitesmoke;
+    box-shadow: 0 1.5px 10px 1.5px black;
+    color: #5f4d48;
+    display: grid;
+    font-family: 'Times New Roman', Times, serif;
+    grid-gap: 0.75rem;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    text-align: left;
+}
+input, select {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #5f4d48;
+    color: #5f4d48;
+    outline: none;
+    padding: 0.5rem;
+}
+#storm-severity {
+    color: #5f4d48;
+}
+#button {
+    text-align: center;
+}
+#button input {
+    background-color: #05476e;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+}
+::placeholder {
+    color: #5f4d48;
+    opacity: 50%;
+}
+fieldset {
+    border: none;
+    margin: 0.5rem 0;
+}
+textarea {
+    margin-top: 0.25rem;
+    width: 100%;
+}
+#value {
+    color: #5f4d48;
+}
+#storm-severity {
+    border: none;
+    display: block;
+}
+.form-grid h3 {
+    color: #5f4d48;
+    text-align: left;
 }

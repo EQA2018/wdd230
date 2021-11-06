@@ -70,5 +70,10 @@
     .gallery-grid {
         grid-template-columns: 1fr 1fr;
     }
-
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    #user-info fieldset, #storm-info fieldset {
+        margin-bottom: 1rem;
+    }
 }
