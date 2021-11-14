@@ -373,7 +373,7 @@ textarea {
     border-bottom: 1px solid #5f4d48;
     padding-bottom: 1rem;
 }
-.home-grid q {
+.home-grid n {
     font-size: medium;
     font-style: italic;
 }
@@ -395,4 +395,7 @@ textarea {
     box-shadow: 0 1.5px 10px 1.5px #5f4d48;
     max-width: 100%;
     margin: 0 auto;
+}
+.wire {
+    max-width: 80%;
 }

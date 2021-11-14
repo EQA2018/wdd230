@@ -13,7 +13,7 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
             town.classList.add('town-data');
             let h2 = document.createElement('h2');
             let a = document.createElement('a');
-            let q = document.createElement('q');
+            let n = document.createElement('n');
             let paragraphs = document.createElement('section');
             paragraphs.classList.add('paragraph-block');
             let p1 = document.createElement('p');
@@ -34,7 +34,7 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
             }
 
             a.textContent = towns[i].name;
-            q.textContent = towns[i].motto;
+            n.textContent = towns[i].motto;
             p1.textContent = 'Year Founded: ' + towns[i].yearFounded;
             p2.textContent = 'Population: ' + towns[i].currentPopulation;
             p3.textContent = 'Annual Rainfall: ' + towns[i].averageRainfall;
@@ -43,7 +43,7 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
 
             h2.appendChild(a);
             town.appendChild(h2);
-            town.appendChild(q);
+            town.appendChild(n);
             paragraphs.appendChild(p1);
             paragraphs.appendChild(p2);
             paragraphs.appendChild(p3);
@@ -56,4 +56,3 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
         }
     }
 });
-//#endregion
