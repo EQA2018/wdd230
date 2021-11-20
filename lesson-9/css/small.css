@@ -32,7 +32,7 @@ h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 h1 {
-    font-size: 3.2rem;
+    font-size: 2.5rem;
 }
 h2 {
     font-weight: bold;
@@ -75,9 +75,10 @@ a {
 }
 p {
     color: black;
-    text-align: left;
+    text-align: center;
     font-size: 1.2rem;
     line-height: 1.2rem;
+    padding: 0.2rem;
 }
 .motto {
     color: white;
@@ -113,10 +114,10 @@ nav a:hover {
 	text-decoration: none;
 	color: white;
 }
-/*.navigation .active a {
+.navigation .active a {
     background-color: whitesmoke;
     color: #05476e;
-}*/
+}
 .navigation .menu a {
     text-align: center;
 }

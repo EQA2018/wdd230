@@ -56,3 +56,38 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
         }
     }
 });
+let d = new Date();
+document.getElementById("copyrightyear").textContent = d.getFullYear();
+
+const options = {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric'
+}
+
+document.getElementById("date").textContent = d.toLocaleDateString('en-UK', options);
+
+const today = d.getDate();
+
+const lastVisit = localStorage.getItem('lastVisit') || today;
+const millisecondsToDay = 86400000;
+
+if (lastVisit == today) {
+    document.querySelector('#gallery-visits').textContent = 'Last Visit: Today is your first visit!!';
+}
+else {
+    displayDate = (lastVisit - today / millisecondsToDay).toFixed(0);
+    document.querySelector('#gallery-visits').textContent = 'Last Visit: ${displayDate}';
+}
+localStorage.setItem('lastVisit', today);
+
+function toggleRating(rating) {
+    document.getElementById("value").innerHTML = rating;
+}
+function selectResponse() {
+    const s = document.querySelector('#selected')
+    const sel = document.querySelector('#storm-region');
+    s.style.display = "block";
+    s.textContent = sel.value;
+}
