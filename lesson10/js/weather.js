@@ -1,10 +1,11 @@
 const currweatherURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
-const forecastURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
+const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
 
 fetch(currweatherURL)
   .then((response) => response.json())
   .then((currweather) => {
-
+      
+    console.log(currweather);
     document.querySelector('#t').textContent = Math.round(currweather.main.temp * 10) / 10;
     document.querySelector('#s').textContent = Math.round(currweather.wind.speed * 10) / 10;
     document.querySelector('.humidity').textContent = `${currweather.main.humidity}%`;
@@ -18,7 +19,7 @@ fetch(currweatherURL)
     document.querySelector('#f').textContent = f;
   });
 
-const d = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 fetch(forecastURL)
   .then((response) => response.json())
   .then((forecast) => {
@@ -33,7 +34,7 @@ fetch(forecastURL)
       let imagesrc = `https://openweathermap.org/img/w/${temperature.weather[0].icon}.png`;
       let imagealt = temperature.weather[0].description;
 
-      document.querySelector(`#day${weekday+1}`).textContent = d[new Date(temperature.dt_txt).getDay()];
+      document.querySelector(`#day${weekday+1}`).textContent = weekdays[new Date(temperature.dt_txt).getDay()];
       document.querySelector(`#temp${temp+1}`).textContent = `${Math.round(temperature.main.temp)}°F`;
       document.querySelector(`#icon${icon+1}`).setAttribute('src', imagesrc);
       document.querySelector(`#icon${icon+1}`).setAttribute('alt', imagealt);

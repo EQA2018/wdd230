@@ -400,3 +400,9 @@ textarea {
 .wire {
     max-width: 80%;
 }
+#day1 {
+    color: black;
+}
+#temp1 {
+    color: black;
+}

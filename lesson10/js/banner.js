@@ -21,7 +21,7 @@ const options = {
 
 document.getElementById("date").textContent = d.toLocaleDateString('en-UK', options);
 
-const today = d.getDate();
+/*const today = d.getDate();
 
 const lastVisit = localStorage.getItem('lastVisit') || today;
 const millisecondsToDay = 86400000;
@@ -43,4 +43,4 @@ function selectResponse() {
     const sel = document.querySelector('#storm-region');
     s.style.display = "block";
     s.textContent = sel.value;
-}
+}*/
