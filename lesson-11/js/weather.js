@@ -1,5 +1,23 @@
-const currweatherURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
-const forecastURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
+let currweatherURL = "";
+let forecastURL = "";
+
+if (window.location.href === 'https://eqa2018.github.io/wdd230/lesson-11/sodasprings.html') {
+  currweatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
+  forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
+  currenttown = 'Soda Springs';
+}
+
+else if (window.location.href === 'https://eqa2018.github.io/wdd230/lesson-11/preston.html') {
+  currweatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
+  forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
+  currenttown = 'Preston';
+}
+
+else {
+  currweatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
+  forecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5585010&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
+  currenttown = 'Fish Haven';
+}; 
 
 fetch(currweatherURL)
   .then((response) => response.json())
@@ -42,4 +60,21 @@ fetch(forecastURL)
       temp++;
       icon++;
     });
+});
+fetch('https://byui-cit230.github.io/weather/data/towndata.json')
+.then(function (response) {
+  return response.json();
+})
+.then(function (jsonObject) {
+  const towns = jsonObject['towns'];
+  const townname = towns.filter((town) => town.name === 'Preston' || town.name === 'Soda Springs' || town.name === 'Fish Haven');
+  townname.forEach((town) => {
+    if (town.name === currenttown) {
+      for (i=0; i < town.events.length; i++) {
+        let para = document.createElement('p');
+        para.textContent = `${town.events[i]}`;
+        document.querySelector('#events').appendChild(para);
+      };
+    };
+  });
 });
