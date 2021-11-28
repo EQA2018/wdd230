@@ -1,5 +1,6 @@
 let currweatherURL = "";
 let forecastURL = "";
+let currenttown = '';
 
 if (window.location.href === 'https://eqa2018.github.io/wdd230/lesson-11/sodasprings.html') {
   currweatherURL = "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=97d75aaa7ad1a3a956b14c369172fdaf";
