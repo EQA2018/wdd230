@@ -248,6 +248,7 @@ picture img {
     text-align: center;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
+    margin-bottom: 1rem;
 }
 .col-head, .condition {
     display: block;
@@ -375,7 +376,7 @@ textarea {
     text-align: center;
     padding: 1rem 1rem 1rem 1rem;
     line-height: 1.8rem;
-
+    margin-top: 1rem;
 }
 .home-grid h2 {
     border-bottom: 1px solid #5f4d48;
@@ -421,5 +422,8 @@ section.events {
     grid-gap: 0.75rem;
     text-align: left;
     margin: 0 auto;
+    margin-top: 1rem;
     width: 70%;
+    padding-top: .01em;
+    padding-bottom: .01em;
 }
