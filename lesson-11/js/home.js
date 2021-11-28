@@ -24,11 +24,11 @@ fetch(requestURL).then(function (response) {return response.json();}).then(funct
             let img = document.createElement('img');
 
             if (towns[i].name === "Preston") {
-                a.setAttribute('href', "preston-6.html");
+                a.setAttribute('href', "preston.html");
             } else if (towns[i].name === "Fish Haven") {
-                a.setAttribute('href', "#");
+                a.setAttribute('href', "fishhaven.html");
             } else if (towns[i].name === "Soda Springs") {
-                a.setAttribute('href', "#");
+                a.setAttribute('href', "sodasprings.html");
             } else {
                 a.setAttribute('href', "#");
             }

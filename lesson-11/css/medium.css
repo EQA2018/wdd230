@@ -28,7 +28,7 @@
         width: 10rem;
     }
     .info-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         column-gap: 1rem;
     }
     #preston-map {

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <title>Rocky Mountain Weather - Soda Springs</title>
+ <meta name="description" content="soda-springs-final-turn-in-page-for-week-11"> 
+ <link rel ="shortcut icon" href ="favicon.ico">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/small.css">
+ <link rel="stylesheet" href="css/medium.css">
+ <link rel="stylesheet" href="css/large.css">
+ <script defer src="js/banner.js"></script>
+ <script defer src="js/windchill.js"></script>
+ <script defer src="js/weather.js"></script>
+ <script defer src="js/events.js"></script>
+
+ </head>
+ <body>
+        <header>
+            <img src="images/weather-logo.JPG" alt="Logo">
+            <section class="header1">
+                <h1>Rocky Mountain Country Weather and Events</h1>
+                    <div class="motto">Whether it's weather or events its here!
+                    </div>
+            </section>
+        </header>
+       
+            <nav>
+                <ul class="navigation">
+                    <li class="menu"><a>Menu</a></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="preston.html">Preston</a></li>
+                    <li class="active"><a href="sodasprings.html">Soda Springs</a></li>
+                    <li><a href="fishhaven.html">Fish Haven</a></li>
+                    <li><a href="stormcenter.html">Storm Center</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+ <main>
+     
+         <h2>Soda Springs</h2>
+            <div class="herocontainer">
+                <picture class="heroimg">
+                    <source media="(max-width: 610px)" srcset="images/banner-small.jpg">
+                    <source media="(max-width: 979px)" srcset="images/banner-medium1.jpg">
+                    <source media="(min-width: 980px)" srcset="images/banner-large.jpg">
+                    <img src ="images/banner.jpg" alt ="A picture of mountains">
+                </picture>
+
+                <section class="weather">
+                    <h3>Weather Summary</h3>
+                    <p class="left1">Currently:</p>
+                    <p class="right1"><span class="cloudy"></span></p>
+                    <p class="left1">Current Temp:</p>
+                    <p class="right1"><span id="t"></span>°F</p>
+                    <p class="left1">Wind Chill:</p>
+                    <p class="right1"><span id="f"></span></p>
+                    <p class="left1">Humidity:</p>
+                    <p class="right1"><span class="humidity"></span></p>
+                    <p class="left1">Wind Speed:</p>
+                    <p class="right1"><span id="s"></span> MPH</p>
+                </section>
+            </div>
+
+            <h3 class="forecast">Five Day Forecast</h3>
+                <div class="flex">
+                    <div class="flex-col">
+                        <span class="col-head" id="day1"></span>
+                        <img src="#" alt="#" id="icon1">
+                        <span class ="condition" id="temp1"></span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head" id="day2"></span>
+                        <img src="#" alt="#" id="icon2">
+                        <span class="condition" id="temp2"></span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head" id="day3"></span>
+                        <img src="#" alt="#" id="icon3">
+                        <span class="condition" id="temp3"></span>
+                    </div>
+                    <div class="flex-col">
+                        <span class="col-head" id="day4"></span>
+                        <img src="#" alt="#" id="icon4">
+                        <span class="condition" id="temp4"></span>
+                    </div>
+                    <div class ="flex-col">
+                        <span class ="col-head" id="day5"></span>
+                        <img src ="#" alt="#" id="icon5">
+                        <span class ="condition" id="temp5"></span>
+                    </div>
+                </div>
+
+                <section class="events">
+                    <h3>Upcoming Events</h3>
+                    <div id="events"></div>
+                </section>
+
+                <div class="article">
+                  <h3 class="pet">Annual Preston Pet Adoption</h3>
+                  <picture class="petadoption">
+                      <source media="(max-width: 510px)" srcset="images/adoption-475small.jpg">
+                      <source media="(max-width: 979px)" srcset="images/adoption-525medium.jpg">
+                      <source media="(min-width: 980px)" srcset="images/adoption-600large.jpg">
+                      <img src ="images/adoption.jpg" alt ="Photo of Adopt instead of Buying">
+                  </picture>
+                  
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+                  <p>
+                    Auctor neque vitae tempus quam pellentesque nec nam. Turpis egestas sed tempus urna et pharetra pharetra massa. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius. Tristique senectus et netus et. Dolor purus non enim praesent. Id eu nisl nunc mi ipsum faucibus. At volutpat diam ut venenatis. Eget nunc scelerisque viverra mauris in. Pretium lectus quam id leo. Ultrices neque ornare aenean euismod elementum nisi quis. Eget felis eget nunc lobortis. Tortor aliquam nulla facilisi cras. Pharetra et ultrices neque ornare aenean. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare. Adipiscing at in tellus integer. Egestas quis ipsum suspendisse ultrices gravida.
+                  </p>
+                </div>
+
+ </main>
+ <footer>
+<section class="contact">
+    <div class="info-grid">
+         <a href ="https://www.google.com/maps/dir/Soda+Springs,+ID//@42.6561273,-111.6173721,13z/data=!4m8!4m7!1m5!1m1!1s0x8755968bb0047ae5:0x9d3970a1a6df8e12!2m2!1d-111.6046687!2d42.6543652!1m0" target ="_blank"><img src ="images/sodasprings.jpg" alt ="Map of Soda Springs Idaho" id="preston-map"></a>
+         <div class="contact-info">
+             <h3 class="footer1">Contact Information</h3>
+             <p class="footer1">1234 N 5th W Preston, ID 83276</p>
+             <p class="footer1">(123) 456-7890</p>
+             <p class="footer1">rmpweatherandevents@gmail.com</p>
+             <div class="social-media">
+                 <a href ="https://www.indeed.com/"><img src ="images/indeed-logo.JPG" alt ="Indeed Icon"></a>
+                 <a href ="https://www.facebook.com/"><img src ="images/facebook-logo.png" alt ="Facebook Icon"></a>
+                 <a href ="https://www.instagram.com/"><img src ="images/instagram-logo.jpg" alt ="Instagram Icon"></a>
+             </div>
+
+         </div>
+    </div>
+
+</section>
+    <p class="footer1">
+        &copy; <span id="copyrightyear"></span> | Quinn Smith | Minnesota  <br><br>
+        </p>
+        <p class="footer1"><span id="date"></span></p>
+</footer>
+ </body>
+</html>
