@@ -1,15 +1,15 @@
-let currenttown ='';
+let currenttowns ='';
 
 if (window.location.href === 'https://eqa2018.github.io/wdd230/lesson-11/sodasprings.html') {
-  currenttown = 'Soda Springs';
+  currenttowns = 'Soda Springs';
 }
 
 else if (window.location.href === 'https://eqa2018.github.io/wdd230/lesson-11/preston.html') { 
-  currenttown = 'Preston';
+  currenttowns = 'Preston';
 }
 
 else {
-  currenttown = 'Fish Haven';
+  currenttowns = 'Fish Haven';
 }
 
 fetch('https://byui-cit230.github.io/weather/data/towndata.json')
@@ -23,7 +23,7 @@ fetch('https://byui-cit230.github.io/weather/data/towndata.json')
     const townname = towns.filter((town) => town.name === 'Preston' || town.name === 'Soda Springs' || town.name === 'Fish Haven');
     townname.forEach((town) => {
      
-      if (town.name === currenttown) {
+      if (town.name === currenttowns) {
         for (i=0; i < town.events.length; i++) {
           let para = document.createElement('p');
           para.textContent = `${town.events[i]}`;
