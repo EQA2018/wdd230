@@ -89,4 +89,15 @@
 	.home-grid .town-container:nth-child(even) .town-data {
 		grid-column: 2;
 	}
+    section.events {
+        background-color: whitesmoke;
+        box-shadow: 0 1.5px 10px 1.5px black;
+        color: #5f4d48;
+        font-family: 'Times New Roman', Times, serif;
+        grid-gap: 0.75rem;
+        text-align: left;
+        margin: 0 auto;
+        width: 70%;
+        
+    }
 }
