@@ -78,7 +78,7 @@ if (lastVisit == today) {
 }
 else {
     displayDate = (lastVisit - today / millisecondsToDay).toFixed(0);
-    document.querySelector('#gallery-visits').textContent = 'Last Visit: ${displayDate}';
+    document.querySelector('#gallery-visits').textContent = `Last Visit: ${displayDate}`;
 }
 localStorage.setItem('lastVisit', today);
 
