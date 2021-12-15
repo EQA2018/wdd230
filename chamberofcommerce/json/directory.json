@@ -1,0 +1,67 @@
+{
+    "directory": [
+        {
+            "name": "NAPA Auto Parts",
+            "address": "2829 Pocatello Ave",
+            "phone": "(208) 226-2740",
+            "website": "https://www.napaonline.com/stores/id/american-falls/2829-pocatello-ave",
+            "email": "email@napa.com",
+            "logo": "images/napa.jpg",
+            "websitename": "www.napaonline.com"
+        },
+        {
+            "name": "American Falls Studio LLC",
+            "address": "1205 Falls Ave",
+            "phone": "(208 226-3163",
+            "website": "https://www.facebook.com/americanfallsstudio",
+            "email": "email@dance.com",
+            "logo": "images/dance.JPG",
+            "websitename": "americanfallsstudio.com"
+        },
+        {
+            "name": "Falls Dental",
+            "address": "239 Idaho Street",
+            "phone": "(208) 904-3496",
+            "website": "https://americanfallsdental.com/",
+            "email": "email@dental.com",
+            "logo": "images/fallsdental.JPG",
+            "websitename": "americanfallsdental.com"
+        },
+        {
+            "name": "Falls Grill & Chill",
+            "address": "277 Harrison St.",
+            "phone": "(208) 226-2245",
+            "website": "https://www.facebook.com/FallsGrillandChill",
+            "email": "email@falls.com",
+            "logo": "images/fallsgrill.png",
+            "websitename": "fallsgrillandchill.com"
+        },
+        {
+            "name": "Ken's",
+            "address": "548 Tyhee",
+            "phone": "(208) 226-5062",
+            "website": "https://www.kensfoodmarket.com/",
+            "email": "email@kens.com",
+            "logo": "images/kens.JPG",
+            "websitename": "kensfoodmarket.com"
+        },
+        {
+            "name": "Power County Hospital District",
+            "address": "510 Roosevelt Street",
+            "phone": "(208) 226-3200",
+            "website": "https://www.pchd.net/",
+            "email": "email@powercounty.com",
+            "logo": "images/pchospital.JPG",
+            "websitename": "pchd.net"
+        },
+        {
+            "name": "Bank of Commerce",
+            "address": "590 Tyhee Ave",
+            "phone": "(208) 523-2020",
+            "website": "https://www.bankofcommerce.org/",
+            "email": "email@bccommerce.com",
+            "logo": "images/bankofcommerce.JPG",
+            "websitename": "bankofcommerce.org"
+        }
+    ]
+}

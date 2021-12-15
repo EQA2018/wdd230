@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+ <title>AF CoC</title>
+ <meta name="description" content="#####################">
+ <link rel ="shortcut icon" href ="favicon.ico">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/small.css">
+ <link rel="stylesheet" href="css/medium.css">
+ <link rel="stylesheet" href="css/large.css">
+
+ </head>
+
+ <body>
+    <header>
+        <img src="###" alt="Logo">
+            <section class="header1">
+                <h1>American Falls Chamber of Commerce</h1>
+                    <div class="motto"> 
+                        Supporting this small towns small businesses!
+                    </div>
+            </section>
+    </header>
+    
+     <nav>
+        <ul class="navigation">
+            <li class="menu"><a>Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="city.html">American Falls, ID</a></li>
+            <li class="active"><a href="join.html">Join Us</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="contact.html">Contact Us</a></li>    
+        </ul>
+    </nav>
+    <picture>
+        <img src="###" alt="###" id="home-img">
+    </picture>
+ <main>
+    <h2>Join Us!</h2>
+    <h3>Instructions</h3> 
+    <p>
+        Please complete the form below to request a membership into the American Falls Chamber of Commerce.
+        Any and every lable that is marked with a red-dashed cell is required to be completed and filled.
+        The required information is: your first and last name, business name, email, and membership level.
+        When the required cell is filled with valid information, it will turn green.
+    </p>
+    <p>
+        information about the levels of memberships
+    </p>
+    <div class="membercontainer">
+        <ul>
+            <li>
+                Gold Membership Benefits: 
+                <ul>
+                    <li>Cost: $1,000 per year</li>
+                    <li>80% discount on tickets to the annual conference</li>
+                    <li>50% discount on luncheon tickets.</li>
+                    <li>All benefits in lower membership levels included.</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Silver Membership Benefits:
+                <ul>
+                    <li>Cost: $400 per year</li>
+                    <li>50% discount on table for AF Days and tickets to annual conference.</li>
+                    <li>5 business days of training for managers, employees, and owners per year.</li>
+                    <li>All benefits in lower membership levels included.</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Bronze Membership Benefits:
+                <ul>
+                    <li>Cost: $200 per year</li>
+                    <li>25% discount on table for AF Days and tickets to annual conference.</li>
+                    <li>Free social media advertisements.</li>
+                    <li>All benefits in lower membership levels included.</li>
+                </ul>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                Non-Profit Membership Benefits:
+                <ul>
+                    <li>Cost: $100 per year</li>
+                    <li>50% discount on tickets to the annual conference.</li>
+                    <li>30% discount on table for AF Days.</li>
+                    <li>Free social media advertisements.</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <form method="get" action="thanks.html" id="form">
+        <h3>Contact Information</h3>
+        <fieldset>
+            <lable class="top">First Name: <input type="text" name="fname" required pattern="[A-Za-a]+" minlength="2"
+                title="Please enter your first name using either capital or lowercase letters. Minimum of two letters."></lable>
+        </fieldset>
+        <fieldset>
+                <lable class="top">Last Name: <input type="text" name="lname" required pattern="[A-Za-a]+" minlength="2"
+                title="Please enter your last name using either capital or lowercase letters. Minimum of two letters."></lable>
+            </fieldset>
+            <fieldset>
+                <lable class="top">Email: <input type="email" name="email"
+                placeholder="name@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></lable>
+            </fieldset>
+            <fieldset>
+                <label class="top">Cell Phone Number: <input type="tel" name="phone"
+                title="Please enter your cell phone number with area code."></label>
+            </fieldset>
+            <fieldset>
+                <label class="top">Business Name: <input type="text" name="businessname"
+                title="Please enter the name of your business." required pattern="[A-Za-z ]+" minlength="2"></label>
+            </fieldset>
+            <fieldset>
+                <label class="top">Title: <input type="text" name="title"
+                title="Please enter your position title at work." ></label>
+            </fieldset>
+            <fieldset>
+                <label class="top">Business Street Address: <input type="text" name="streetaddress"
+                title="Please enter the street address of your business."></label>
+            </fieldset>
+            <fieldset>
+                <label class="top">City: <input type="text" name="cityname"
+                title="Please enter the name of the city your business headquarters are located in."></label>
+            </fieldset>
+            <fieldset>
+                <label class="top">State: <input type="text" name="state"
+                title="Please enter the name of the state your business headquarters are located in."></label>
+            </fieldset>
+            <fieldset>
+                <label class="top">Zip Code: <input type="number" name="zipcode" title="Please enter your zip code."></label>
+            </fieldset>
+            <fieldset>
+                <label class="top">Business Website: <input type="text" name="website"
+                title="Please enter the website for your business."></label>
+            </fieldset>
+            <fieldset>
+                <label class="top">Business Description: <input type="text" name="businessdescription"
+                title="Please enter a description of your business."></label>
+            <div class="radio">
+                <p>Please choose your membership level:</p>
+                <label class="gold"><input type="radio" name="membership" value="gold" required> Gold</label>
+                <label class="silver"><input type="radio" name="membership" value="silver" required> Silver</label>
+                <label class="bronze"><input type="radio" name="membership" value="bronze" required> Bronze</label>
+                <label class="nonprofit"><input type="radio" name="membership" value="nonprofit" required> Non-profit</label>
+            </div>
+         </fieldset>  
+         <button type="submit" class="submit" form="form" formaction="thanks.html" name="reportsbutton">Join Us Today!</button> 
+    </form>
+</main>
+<footer>
+   <section class="contact">
+            <div class ="contact-info">
+                <h3 class="footer1">Contact Information</h3>
+                <p class="footer1">American Falls, Idaho</p>
+                <p class="footer1">P.O. Box 207</p>
+                <p class="footer1">(208) 456-7890</p>
+                <p class="footer1">email@afchamber.com</p>
+                <div class="social-media">
+                    <a href ="https://www.indeed.com/"><img src ="images/indeed-logo.JPG" alt ="Indeed Icon"></a>
+                    <a href ="https://www.facebook.com/"><img src ="images/facebook-logo.png" alt ="Facebook Icon"></a>
+                    <a href ="https://www.instagram.com/"><img src ="images/instagram-logo.jpg" alt ="Instagram Icon"></a>
+                </div>
+                
+            </div>
+   </section>
+   <div class="attribution">
+        <p> id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+        <p>Last Update: <span id="lastupdate"></span></p>
+   </div>
+</footer>
+<script defer src="js/home.js"></script>
+</body>
+</html>
