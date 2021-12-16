@@ -3,8 +3,8 @@
  <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width,initial-scale=1.0">
- <title>AF CoC</title>
- <meta name="description" content="#####################">
+ <title>AF CoC - Join Us</title>
+ <meta name="description" content="Form to join the American Falls Chamber of Commerce!">
  <link rel ="shortcut icon" href ="favicon.ico">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,14 @@
  <link rel="stylesheet" href="css/small.css">
  <link rel="stylesheet" href="css/medium.css">
  <link rel="stylesheet" href="css/large.css">
+ <script defer src="js/navbutton.js"></script>
+ <script defer src="js/date.js"></script>
 
  </head>
 
  <body>
     <header>
-        <img src="###" alt="Logo">
+        <img src="images/logo.jpg" alt="Logo">
             <section class="header1">
                 <h1>American Falls Chamber of Commerce</h1>
                     <div class="motto"> 
@@ -38,7 +40,7 @@
         </ul>
     </nav>
     <picture>
-        <img src="###" alt="###" id="home-img">
+        <img src="images/joinus.jpg" alt="join-us" id="home-img">
     </picture>
  <main>
     <h2>Join Us!</h2>
@@ -50,7 +52,7 @@
         When the required cell is filled with valid information, it will turn green.
     </p>
     <p>
-        information about the levels of memberships
+        Below is a list of our membership levels and information about each one.
     </p>
     <div class="membercontainer">
         <ul>
@@ -101,50 +103,50 @@
     <form method="get" action="thanks.html" id="form">
         <h3>Contact Information</h3>
         <fieldset>
-            <lable class="top">First Name: <input type="text" name="fname" required pattern="[A-Za-a]+" minlength="2"
+            <lable>First Name: <input type="text" name="fname" required pattern="[A-Za-a]+" minlength="2"
                 title="Please enter your first name using either capital or lowercase letters. Minimum of two letters."></lable>
         </fieldset>
         <fieldset>
-                <lable class="top">Last Name: <input type="text" name="lname" required pattern="[A-Za-a]+" minlength="2"
+                <lable>Last Name: <input type="text" name="lname" required pattern="[A-Za-a]+" minlength="2"
                 title="Please enter your last name using either capital or lowercase letters. Minimum of two letters."></lable>
             </fieldset>
             <fieldset>
-                <lable class="top">Email: <input type="email" name="email"
+                <lable>Email: <input type="email" name="email"
                 placeholder="name@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"></lable>
             </fieldset>
             <fieldset>
-                <label class="top">Cell Phone Number: <input type="tel" name="phone"
+                <label>Cell Phone Number: <input type="tel" name="phone"
                 title="Please enter your cell phone number with area code."></label>
             </fieldset>
             <fieldset>
-                <label class="top">Business Name: <input type="text" name="businessname"
+                <label>Business Name: <input type="text" name="businessname"
                 title="Please enter the name of your business." required pattern="[A-Za-z ]+" minlength="2"></label>
             </fieldset>
             <fieldset>
-                <label class="top">Title: <input type="text" name="title"
+                <label>Title: <input type="text" name="title"
                 title="Please enter your position title at work." ></label>
             </fieldset>
             <fieldset>
-                <label class="top">Business Street Address: <input type="text" name="streetaddress"
+                <label>Business Street Address: <input type="text" name="streetaddress"
                 title="Please enter the street address of your business."></label>
             </fieldset>
             <fieldset>
-                <label class="top">City: <input type="text" name="cityname"
+                <label>City: <input type="text" name="cityname"
                 title="Please enter the name of the city your business headquarters are located in."></label>
             </fieldset>
             <fieldset>
-                <label class="top">State: <input type="text" name="state"
+                <label>State: <input type="text" name="state"
                 title="Please enter the name of the state your business headquarters are located in."></label>
             </fieldset>
             <fieldset>
-                <label class="top">Zip Code: <input type="number" name="zipcode" title="Please enter your zip code."></label>
+                <label>Zip Code: <input type="number" name="zipcode" title="Please enter your zip code."></label>
             </fieldset>
             <fieldset>
-                <label class="top">Business Website: <input type="text" name="website"
+                <label>Business Website: <input type="text" name="website"
                 title="Please enter the website for your business."></label>
             </fieldset>
             <fieldset>
-                <label class="top">Business Description: <input type="text" name="businessdescription"
+                <label>Business Description: <input type="text" name="businessdescription"
                 title="Please enter a description of your business."></label>
             <div class="radio">
                 <p>Please choose your membership level:</p>
@@ -174,10 +176,11 @@
             </div>
    </section>
    <div class="attribution">
-        <p> id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+        <p id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
         <p>Last Update: <span id="lastupdate"></span></p>
+        <p><a href="attribution.html">Attributions</a></p>
    </div>
 </footer>
-<script defer src="js/home.js"></script>
+<!-- <script defer src="js/home.js"></script>-->
 </body>
 </html>

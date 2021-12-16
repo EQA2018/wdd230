@@ -3,8 +3,8 @@
  <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width,initial-scale=1.0">
- <title>AF CoC</title>
- <meta name="description" content="#####################">
+ <title>AF CoC - Directory</title>
+ <meta name="description" content="The dirctory page where you can find a list of all the board members.">
  <link rel ="shortcut icon" href ="favicon.ico">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,16 @@
  <link rel="stylesheet" href="css/small.css">
  <link rel="stylesheet" href="css/medium.css">
  <link rel="stylesheet" href="css/large.css">
+ <script defer src="js/navbutton.js"></script>
+ <script defer src="js/date.js"></script>
+ <script defer src="js/directory.js"></script>
+ <script defer src="js/directoryviews.js"></script>
 
  </head>
 
  <body>
     <header>
-        <img src="###" alt="Logo">
+        <img src="images/logo.jpg" alt="Logo">
             <section class="header1">
                 <h1>American Falls Chamber of Commerce</h1>
                     <div class="motto"> 
@@ -38,17 +42,11 @@
         </ul>
     </nav>
     <picture>
-        <img src="###" alt="###" id="home-img">
+        <img src="images/directorypic.jpg" alt="membership" id="home-img">
     </picture>
  <main>
      <h2>Membership Directory</h2>
      <div class="buttons">
-         <div class="lists">
-            <span class="material-icons listview">view_list</span>
-        </div>
-        <div class="grid">
-            <span class="material-icons gridview">grid_view</span>
-        </div>
     </div>
     <div class="directory"></div>
 </main>
@@ -69,10 +67,11 @@
             </div>
    </section>
    <div class="attribution">
-        <p> id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+        <p id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
         <p>Last Update: <span id="lastupdate"></span></p>
+        <p><a href="attribution.html">Attributions</a></p>
    </div>
 </footer>
-<script defer src="js/home.js"></script>
+<!--<script defer src="js/home.js"></script>-->
 </body>
 </html>

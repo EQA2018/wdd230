@@ -3,8 +3,8 @@
  <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width,initial-scale=1.0">
- <title>AF CoC</title>
- <meta name="description" content="#####################">
+ <title>AF CoC - Contact Us</title>
+ <meta name="description" content="The contact us page is where people can found our contact information as well as send a reach out form through email.">
  <link rel ="shortcut icon" href ="favicon.ico">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,12 +13,13 @@
  <link rel="stylesheet" href="css/small.css">
  <link rel="stylesheet" href="css/medium.css">
  <link rel="stylesheet" href="css/large.css">
-
+ <script defer src="js/navbutton.js"></script>
+ <script defer src="js/date.js"></script>
  </head>
 
  <body>
     <header>
-        <img src="###" alt="Logo">
+        <img src="images/logo.jpg" alt="Logo">
             <section class="header1">
                 <h1>American Falls Chamber of Commerce</h1>
                     <div class="motto"> 
@@ -38,7 +39,7 @@
         </ul>
     </nav>
     <picture>
-        <img src="###" alt="###" id="home-img">
+        <img src="images/contactus.jpg" alt="contact-us" id="home-img">
     </picture>
  <main>
      <h2>Contact Us</h2>
@@ -57,25 +58,25 @@
              <span>Email: </span>email@afchamber.com<br>
          </section>
      </div>
-     <div class="formcontainer">
+     <!--<div class="formcontainer">-->
          <form method="get" action="thanks-contact.html" id="form">
              <fieldset>
                 <legend>Contact Information</legend>
-                <label class="top">First Name: 
-                    <input type="text" name="fname" title="Please enter your first name."></label>
-                <label class="top">Last Name: 
-                    <input type="text" name="lname" title="Please enter your last name."></label>
-                <label class="top">Email: 
-                    <input type="email" name="email" placeholder="name@gmail.com"></label>
-                <label class="top">Cell Phone Number: 
+                <label>First Name: 
+                    <input type="text" name="fname" title="Please enter your first name."></label><br>
+                <label">Last Name: 
+                    <input type="text" name="lname" title="Please enter your last name."></label><br>
+                <label>Email: 
+                    <input type="email" name="email" placeholder="name@gmail.com"></label><br>
+                <label>Cell Phone Number: 
                     <input type="tel" name="phone"
-                    title="Please enter your cell phone number with area code."></label>
-                <label class="top">Additional Information or Comments? <textarea name="addinfo" id="addinfo" cols="30"
-                    rows="10"></textarea></label>
+                    title="Please enter your cell phone number with area code."></label><br><br>
+                <label>Additional Information or Comments? <textarea name="addinfo" id="addinfo" cols="30"
+                    rows="10"></textarea></label><br>
              </fieldset>
              <button type="submit" class="submit" form="form" formaction="thanks-contact.html" name="reportbutton">Contact Us</button>
          </form>
-     </div>
+     <!--</div>-->
      <div class="boardmembers">
         <ul>
             <li>
@@ -154,7 +155,7 @@
 <footer>
    <section class="contact">
     <div class="info-grid">
-        <a href ="###" target ="_blank"><img src ="###" alt ="###" id="preston-map"></a>
+        <a href ="https://www.google.com/maps/place/American+Falls,+ID+83211/@42.7845172,-112.8742371,14z/data=!3m1!4b1!4m5!3m4!1s0x54aa8cdc7bc64479:0x7d629dd73d9a5d20!8m2!3d42.7860226!4d-112.8544377" target ="_blank"><img src ="images/afmap.jpg" alt ="map-of-af" id="preston-map"></a>
         <div class ="contact-info">
             <h3 class="footer1">Contact Information</h3>
             <p class="footer1">American Falls, Idaho</p>
@@ -170,8 +171,9 @@
     </div>
    </section>
    <div class="attribution">
-        <p> id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+        <p id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
         <p>Last Update: <span id="lastupdate"></span></p>
+        <p><a href="attribution.html">Attributions</a></p>
    </div>
 </footer>
 <script defer src="js/home.js"></script>

@@ -3,8 +3,8 @@
  <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width,initial-scale=1.0">
- <title>AF CoC</title>
- <meta name="description" content="#####################">
+ <title>AF CoC - Home</title>
+ <meta name="description" content="Home page for the American Falls Idaho Chamber of Commerce.">
  <link rel ="shortcut icon" href ="favicon.ico">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,13 +13,16 @@
  <link rel="stylesheet" href="css/small.css">
  <link rel="stylesheet" href="css/medium.css">
  <link rel="stylesheet" href="css/large.css">
+ <script defer src="js/navbutton.js"></script>
+ <script defer src="js/date.js"></script>
+ <script defer src="js/call.js"></script>
 
  </head>
 
  <body>
     <aside id="weatheralert"></aside>
     <header>
-        <img src="###" alt="Logo">
+        <img src='images/logo.jpg' alt="Logo">
             <section class="header1">
                 <h1>American Falls Chamber of Commerce</h1>
                     <div class="motto"> 
@@ -39,11 +42,9 @@
         </ul>
     </nav>
     <picture>
-         <img src="###" alt="###" id="home-img">
+         <img src="images/cityofaf.jpg" alt="picture-of-the-mountains" id="home-img">
      </picture>
  <main>
-     
-     <!--<div class="home-grid"></div>-->
 
      <div class="homecontainer">
          <h2>Welcome!</h2>
@@ -84,9 +85,6 @@
              </div>
          </div>
          <section class="benefits">
-             <picture>
-                 <img src="###" alt="###">
-             </picture>
              <h3>Benefits That Come With Joining Us!</h3>
              <p>
                  You might wonder, "Why should I join the American Falls Chamber of Commerce?"
@@ -103,7 +101,7 @@
          </section>
          <section class="adranch">
              <picture>
-                 <img src="###" alt="###">
+                 <img src="images/theranch.jpg" alt="the-ranch-bakery">
              </picture>
              <div>
                  <h3>The Ranch</h3>
@@ -116,7 +114,7 @@
          </section>
          <section class="adtres">
             <picture>
-                <img src="###" alt="###">
+                <img src="images/tres.jpg" alt="tres-hermanos-resturant">
             </picture>
             <div>
                 <h3>Tres Hermanos</h3>
@@ -127,9 +125,9 @@
                 </ul>
             </div>
         </section>
-        <section class="admoca">
+        <section class="admocha">
             <picture>
-                <img src="###" alt="###">
+                <img src="images/mocha.jpg" alt="the-mocha-shack">
             </picture>
             <div>
                 <h3>Mocha Shack</h3>
@@ -147,7 +145,6 @@
                 To help voluntarily unite, promote, and support our areas businesses and business developements, and enrichment. Fostering the unity of our citizens and cultures.
                 Our current goals are as follows:
             </p>
-            <img src="###" alt="###">
             <ol class="list">
                 <li>Increase our membership by 10 businesses and or individuals.</li>
                 <li>Increase exposure and promotions of town wide events that host local vendors, like AF Days.</li>
@@ -173,10 +170,11 @@
              </div>
     </section>
     <div class="attribution">
-         <p> id="copyright">&copy; <span id="copyrightyr"></span> | <span id="currentdate"></span></p>
+         <p id="copyright">&copy; <span id="copyrightyear"></span> | <span id="currentdate"></span></p>
          <p>Last Update: <span id="lastupdate"></span></p>
+         <p><a href="attribution.html">Attributions</a></p>
     </div>
  </footer>
- <script defer src="js/home.js"></script>
+ <!--<script defer src="js/home.js"></script>-->
  </body>
 </html>
