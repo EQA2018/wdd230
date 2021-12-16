@@ -3,7 +3,7 @@ body {
     font-size: 1.2rem;
     max-width: 80%;
     margin: 0 auto;
-    background-color: #B1A7A6; /*change color*/
+    background-color: #B1A7A6;
 }
 header, footer {
     background-color: #A4161A;
@@ -85,7 +85,6 @@ main {
 
     text-align: left;
     height: auto;
-    /*width: fit-content;*/
     margin: 0 auto;
     padding: 0.8rem;
     object-fit: scale-down;
@@ -94,13 +93,6 @@ main {
     color: black;
     background-color: #F5F3F4;
 }
-/*main section img{
-    /*width: 25%;
-    height: auto;
-    box-shadow: 0 0 6px gray;
-    float: left;
-}*/
-
 p {
     color: black;
     text-align: left;
@@ -174,7 +166,7 @@ nav a:hover {
 .responsive li {
     display: block;
 }
-/*footer contact stuff 1*/
+
 .info-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -196,7 +188,6 @@ nav a:hover {
     border-radius: 25px;
     width: 250px;
 }
-/*footer contact stuff 2*/
 .article {
     border: 1px solid black;
     padding: 0.4em;
@@ -208,7 +199,6 @@ nav a:hover {
 .article p, .article h3 {
     text-align: left;
 }
-/*footer contact stuff 3*/
 .herocontainer {
     position: relative;
 }
@@ -218,11 +208,6 @@ picture img {
     box-shadow: 0 0 0.5rem black;
     border-radius: 7px;
 }
-/*.forecast {
-    margin: 1rem 0 0.25rem 0;
-    text-align: center;
-    width: 100%;
-}*/
 .bball {
     margin: 1rem 0 0 0;
 }
@@ -346,7 +331,6 @@ a.button {
     height: auto;
     padding-top: 0.25rem;
 }
-/*week 6 changes*/
 .heroimg img {
     width: 100%;
     height: auto;

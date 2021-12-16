@@ -6,9 +6,9 @@ fetch(weatherdata)
   .then((response) => response.json())  
   .then((weatherdata) => {
     console.log(weatherdata);
-    document.querySelector('.t').textContent = Math.round(weatherdata.current.temp * 10) / 10;
+    document.querySelector('#t').textContent = Math.round(weatherdata.current.temp * 10) / 10;
     document.querySelector('.humidity').textContent = `${weatherdata.current.humidity}%`;
-    document.querySelector('.cloudiness').textContent = weatherdata.current.weather[0].description;
+    document.querySelector('.cloudy').textContent = weatherdata.current.weather[0].description;
     let weekday = 0;
     let temp = 0;
     for (i=0; i < weatherdata.daily.length-5; i++) {

@@ -1,8 +1,6 @@
 const menubutton = document.querySelector('.menu');
 const mainnav = document.querySelector('.navigation');
-/*document.querySelector('.menu')
-document.querySelector('mainnav')
-ocument.querySelector('.navigation')*/
+
 menubutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
 
 window.onresize = () => {
